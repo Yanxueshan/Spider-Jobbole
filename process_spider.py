@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 from concurrent.futures import ProcessPoolExecutor
 from multiprocessing import Manager
 from bs4 import BeautifulSoup
