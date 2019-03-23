@@ -80,7 +80,10 @@ async def parse_url(session, url, pool):
     seen_urls.add(url)
     try:
         bs = BeautifulSoup(html, "html.parser")
-        try:
+        re_match = re.match('http://blog.jobbole.com/all-posts/page/\d+/', url)
+        if re_match:
+            parse_url_html(bs)
+        else:
             title, support_nums, collection_nums, comment_nums = parse_article_html(bs)
             async with pool.acquire() as conn:
                 async with conn.cursor() as cur:
@@ -90,8 +93,6 @@ async def parse_url(session, url, pool):
                     if nums >= 1000:
                         print(time.time()-start_time)
                         os._exit(0)
-        except Exception:
-            parse_url_html(bs)
     except TypeError:
         pass
 
@@ -133,4 +134,4 @@ if __name__ == '__main__':
     asyncio.ensure_future(main(loop))
     loop.run_forever()
 
-    # time cost: 346.4872319698334s
+    # time cost: 243.34828853607178s
