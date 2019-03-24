@@ -8,6 +8,9 @@ import requests
 from queue import Queue
 from bs4 import BeautifulSoup
 
+__author__ = 'Yan'
+__date__ = '2019/3/23 23:46'
+
 
 def get_url(url, queue):
     html = requests.get(url).text

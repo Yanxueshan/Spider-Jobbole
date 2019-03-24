@@ -7,6 +7,9 @@ import re
 import time
 import os
 
+__author__ = 'Yan'
+__date__ = '2019/3/24 16:19'
+
 url_queue = Queue()
 data_queue = Queue()
 html_queue = Queue()

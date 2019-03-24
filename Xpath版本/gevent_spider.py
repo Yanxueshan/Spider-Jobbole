@@ -8,6 +8,9 @@ import requests
 from queue import Queue
 from lxml import etree
 
+__author__ = 'Yan'
+__date__ = '2019/3/24 18:01'
+
 
 def get_url(url, queue):
     html = requests.get(url).text

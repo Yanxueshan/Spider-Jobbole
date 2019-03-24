@@ -5,6 +5,9 @@ import os
 import pymysql
 from bs4 import BeautifulSoup
 
+__author__ = 'Yan'
+__date__ = '2019/3/23 18:43'
+
 
 class Fetch:
     def __init__(self, urls):

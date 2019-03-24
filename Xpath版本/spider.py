@@ -5,6 +5,9 @@ import os
 import pymysql
 from lxml import etree
 
+__author__ = 'Yan'
+__date__ = '2019/3/24 15:52'
+
 
 class Fetch:
     def __init__(self, urls):

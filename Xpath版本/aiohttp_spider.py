@@ -7,6 +7,8 @@ import aiomysql
 import re
 from lxml import etree
 
+__author__ = 'Yan'
+__date__ = '2019/3/24 18:19'
 
 wait_urls = []
 seen_urls = set()

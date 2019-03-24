@@ -1,12 +1,13 @@
 import asyncio
 import os
 import time
-
 import aiohttp
 import aiomysql
 import re
 from bs4 import BeautifulSoup
 
+__author__ = 'Yan'
+__date__ = '2019/3/24 00:29'
 
 wait_urls = []
 seen_urls = set()
