@@ -72,7 +72,7 @@ def insert_to_mysql(queue):
     '''
     global nums
     global start_time
-    connect = pymysql.connect(host='localhost', user='root', password='lingtian..1021', db='jobbole', charset='utf8')
+    connect = pymysql.connect(host='localhost', user='root', password='root', db='jobbole', charset='utf8')
     cursor = connect.cursor()
     while True:
         if queue is None:
