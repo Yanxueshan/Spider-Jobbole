@@ -117,7 +117,7 @@ async def consumer(pool):
 async def main(loop):
     start_url = 'http://blog.jobbole.com/all-posts/'
     pool = await aiomysql.create_pool(host='127.0.0.1', port=3306,
-                                      user='root', password='lingtian..1021',
+                                      user='root', password='root',
                                       db='jobbole', loop=loop, charset='utf8', autocommit=True)
 
     async with aiohttp.ClientSession(loop=loop) as session:
