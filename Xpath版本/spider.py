@@ -11,7 +11,7 @@ __date__ = '2019/3/24 15:52'
 
 class Fetch:
     def __init__(self, urls):
-        self.connect = pymysql.connect(host='localhost', user='root', password='lingtian..1021', db='jobbole', charset='utf8')
+        self.connect = pymysql.connect(host='localhost', user='root', password='root', db='jobbole', charset='utf8')
         self.cursor = self.connect.cursor()
         self.urls = urls
 
