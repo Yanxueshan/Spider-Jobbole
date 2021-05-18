@@ -83,7 +83,7 @@ def insert_to_mysql(data_queue, nums):
         '''
             将数据插入到数据库中
         '''
-        connect = pymysql.connect(host='localhost', user='root', password='lingtian..1021', db='jobbole',
+        connect = pymysql.connect(host='localhost', user='root', password='root', db='jobbole',
                                   charset='utf8')
         while data_queue:
             nums['numbers'] += 1
