@@ -21,7 +21,7 @@ class Fetch:
         爬取jobbole所有文章
     '''
     def __init__(self):
-        self.connect = pymysql.connect(host='localhost', user='root', password='lingtian..1021', db='jobbole', charset='utf8')
+        self.connect = pymysql.connect(host='localhost', user='root', password='root', db='jobbole', charset='utf8')
         self.cursor = self.connect.cursor()
 
     def get_url(self):
